@@ -1,0 +1,19 @@
+<h2>Sign Up!</h2>
+    {{#if missatgeError}}
+        <div class="alert alert-danger" role="alert">
+            {{missatgeError}}
+        </div>
+    {{/if}}
+    <form action="/sign-up" method="POST" class="w-25 mx-auto m-5">
+        <div class="mb-3">
+            <label for="titol" class="form-label">Username</label>
+            <input type="text" class="form-control" id="titol" aria-describedby="emailHelp" autocomplete="off" name="username">
+
+            <label for="titol" class="form-label">Password</label>
+            <input type="password" class="form-control" id="titol" aria-describedby="emailHelp" name="password">
+        </div>
+        <button type="submit" class="btn btn-info">Sign Up!</button>
+    </form>
+<form action="/login">
+    <input class="btn btn-primary translate-middle" type="submit" value="LogIn">
+</form>
